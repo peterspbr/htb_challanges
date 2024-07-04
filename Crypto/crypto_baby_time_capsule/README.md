@@ -67,7 +67,7 @@ The value of e = 5. That's really small. We usually work with the value 65537 fo
 > e = 5
 
 ## Decrypting
-As we can notice, the ciphertext and moduli 𝑛 is different for each iteration, but the public exponent 𝑒 remains the same. This can lead us to the RSA Small Public Exponent Attack, often called Hastad's Broadcast Attack. This attack exploits the scenario where the same plaintext message is sent to multiple recipients who share the same small public exponent 𝑒 but different moduli 𝑛. Using the Chinese Remainder Theorem (CRT), one can recover the plaintext message efficiently.
+As we can notice, the ciphertext and moduli 𝑛 is different for each iteration, but the public exponent 𝑒 remains the same and it's really small. This can lead us to the RSA Small Public Exponent Attack, often called Hastad's Broadcast Attack. This attack exploits the scenario where the same plaintext message is sent to multiple recipients who share the same small public exponent 𝑒 but different moduli 𝑛. Using the Chinese Remainder Theorem (CRT), one can recover the plaintext message efficiently.
 
 The following script implements these:
 
